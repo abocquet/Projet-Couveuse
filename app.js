@@ -1,8 +1,7 @@
 var express = require('express'),
-	nunjucks = require('nunjucks'),
 	events = require('./events');
 
-	serial = require('./serial'),
+	// serial = require('./serial'),
 	db = require('./db'),
 	sockets = require('./sockets')
 ;
@@ -10,14 +9,13 @@ var express = require('express'),
 //On initialise les composants
 
 var app = express();
+app.use(express.static('public'))
+app.get('/', function (req, res) {
+	res.sendfile(__dirname + '/view/index.html');
+});
+
 require('./model')(db());
 
-app.use(express.errorHandler())
-
-nunjucks.configure('views', {
-	autoescape: true,
-	express: app
-});
 
 //On inscrit les routes
 

@@ -1,4 +1,5 @@
-var SerialPort = require('trivial-port'),
+var serialPort = require("serialport"),
+	SerialPort = serialPort.SerialPort,
 	events = require('./events')
 ;
 
@@ -27,10 +28,9 @@ var getDatas = function(data){
 
 }
 
-var port = new SerialPort({
-		serialPort: "dev/tty.usbmodem"
-	});
-	// port.initialize(function(err){ throw err ;});
+var port = new SerialPort('/dev/cu.usbmodem411', {
+	parser: serialPort.parsers.readline("\n")
+});
 	port.on("data", getDatas);
 
 events.client.on('connection', function(){ nb_clients++; changeRefreshFreq(); });

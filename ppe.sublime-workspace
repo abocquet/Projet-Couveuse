@@ -1056,6 +1056,10 @@
 	},
 	"file_history":
 	[
+		"/Users/adrienbocquet/Programmation/NodeJS/PPE/view/index.html",
+		"/Users/adrienbocquet/Programmation/NodeJS/PPE/serial.js",
+		"/Users/adrienbocquet/Programmation/NodeJS/PPE/app.js",
+		"/Users/adrienbocquet/Programmation/NodeJS/PPE/ppe.sublime-project",
 		"/Users/adrienbocquet/Desktop/PPE/serial.js",
 		"/Users/adrienbocquet/Desktop/PPE/model.js",
 		"/Users/adrienbocquet/Desktop/PPE/views/index.html",
@@ -1179,11 +1183,7 @@
 		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/security.js",
 		"/Users/adrienbocquet/Downloads/ether-etherpad-lite-8fffe47/settings.json.template",
 		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/models.js",
-		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/web/index.html",
-		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/web/js/favoris.js",
-		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/web/sass/_classes.scss",
-		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/web/sass/_favoris.scss",
-		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/web/js/sync.js"
+		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/web/index.html"
 	],
 	"find":
 	{
@@ -1520,6 +1520,14 @@
 		"selected_items":
 		[
 			[
+				"inde",
+				"view/index.html"
+			],
+			[
+				"app",
+				"app.js"
+			],
+			[
 				"ser",
 				"serial.js"
 			],
@@ -1548,16 +1556,8 @@
 				"model.js"
 			],
 			[
-				"app",
-				"app.js"
-			],
-			[
 				"eve",
 				"events.js"
-			],
-			[
-				"inde",
-				"routes/index.js"
 			],
 			[
 				"ap",
