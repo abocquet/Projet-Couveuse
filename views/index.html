@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Couveuse</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/added.css" rel="stylesheet">
+
+		<!-- Just for debugging purposes. Don't actually copy this line! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Couveuse supervisée</h1>
+
+				<p class="lead">
+					<span id="time"></span>
+					<span id="cycle"></span>
+				</p>
+			</div>
+
+			<div class="row marketing">
+				<div class="col-lg-6">
+					<h4>Humidité</h4>
+					<canvas id="humidite" height="200" width="700" style="width: 100%;"></canvas>
+				</div>
+				
+				<div class="col-lg-6">
+					<h4>Température</h4>
+					<canvas id="temperature" height="200" width="700" style="width: 100%;"></canvas>
+				</div>
+			</div>
+
+			<div class="footer">
+				<p class="text-center">
+					Télésurveillance d'une couveuse a oeufs <br>
+					Hébergé sur Apache 2 - Debian / Support: Raspberry Pi type B <br>
+					Projet de SIN - Lycée Vaucanson (Isère) TSTI2D1 <br>
+					Crée par
+					<a href="mailto:ivan.bob.emile@gmail.com">Ivan Roger</a> - <a href="mailto:adrienbocquet38@gmail.com">Adrien Bocquet</a>
+					2014
+				</p>
+			</div>
+
+		</div> <!-- /container -->
+
+
+		<!-- // <script src="js/jquery.min.js"></script> -->
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/chart.min.js"></script>
+		<script src="js/datas.js"></script>
+		
+	</body>
+</html>
