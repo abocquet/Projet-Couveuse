@@ -17,8 +17,8 @@ socket.on('new_data', function(data){
 		labels: data.label,
 		datasets: [
 			{
-				strokeColor: "rgba(231, 76, 60,0.5)",
-				fillColor: "rgba(150, 150, 150,0)",
+				strokeColor: "rgba(231, 76, 60, 1)",
+				fillColor: "rgba(231, 76, 60,0.1)",
 				data : data.temperature
 			}
 		],
@@ -29,8 +29,8 @@ socket.on('new_data', function(data){
 		labels: data.label,
 		datasets: [
 			{
-				strokeColor: "rgba(52, 152, 219,0.5)",
-				fillColor: "rgba(150, 150, 150,0)",
+				strokeColor: "rgba(52, 152, 219,1)",
+				fillColor: "rgba(52, 152, 219,0.1)",
 				data : data.humidite
 			}
 		]
