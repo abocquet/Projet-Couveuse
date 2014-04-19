@@ -3,10 +3,6 @@ var serialPort = require("serialport"),
 	events = require('./events')
 ;
 
-var nb_clients = 0,
-	refresh
-;
-
 var getDatas = function(data){
 
 	data = data.split[':'][1].split('-');
@@ -33,26 +29,3 @@ var port = new SerialPort('/dev/cu.usbmodem411', {
 });
 	port.on("data", getDatas);
 
-events.client.on('connection', function(){ nb_clients++; changeRefreshFreq(); });
-events.client.on('deconnection', function(){ nb_clients--; changeRefreshFreq(); });
-
-var changeRefreshFreq = function(){
-
-	var freq ;
-
-	if(nb_clients > 0)
-	{
-		freq = 1000 * 10 ;
-	}
-	else
-	{
-		freq = 1000 * 60 * 10 ;
-	}
-
-	clearInterval(refresh);
-	refresh = setInterval(function(){
-
-		port.write('GD:C-J-T-H\n');
-
-	}, freq);
-};

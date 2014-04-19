@@ -1056,6 +1056,7 @@
 	},
 	"file_history":
 	[
+		"/Users/adrienbocquet/Programmation/NodeJS/PPE/public/js/datas.js",
 		"/Users/adrienbocquet/Programmation/NodeJS/PPE/view/index.html",
 		"/Users/adrienbocquet/Programmation/NodeJS/PPE/serial.js",
 		"/Users/adrienbocquet/Programmation/NodeJS/PPE/app.js",
@@ -1182,8 +1183,7 @@
 		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/parameters.js",
 		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/security.js",
 		"/Users/adrienbocquet/Downloads/ether-etherpad-lite-8fffe47/settings.json.template",
-		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/models.js",
-		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/web/index.html"
+		"/Users/adrienbocquet/Programmation/NodeJS/Amabus/models.js"
 	],
 	"find":
 	{
@@ -1267,6 +1267,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"200",
+			"0",
+			"219",
 			"col",
 			"chart",
 			"1000",
@@ -1391,10 +1394,7 @@
 			"revision",
 			"Thyngs",
 			"i",
-			"1",
-			"article",
-			":",
-			"UpdateSchema"
+			"1"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1520,6 +1520,14 @@
 		"selected_items":
 		[
 			[
+				"data",
+				"public/js/datas.js"
+			],
+			[
+				"html",
+				"view/index.html"
+			],
+			[
 				"inde",
 				"view/index.html"
 			],
@@ -1538,10 +1546,6 @@
 			[
 				"dat",
 				"public/js/datas.js"
-			],
-			[
-				"html",
-				"views/index.html"
 			],
 			[
 				"so",
@@ -1578,10 +1582,6 @@
 			[
 				"db",
 				"db.js"
-			],
-			[
-				"data",
-				"public/js/datas.js"
 			],
 			[
 				"socket",

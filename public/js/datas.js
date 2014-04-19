@@ -17,11 +17,11 @@ socket.on('new_data', function(data){
 		labels: data.label,
 		datasets: [
 			{
-				fillColor : "rgba(231, 76, 60,0.5)",
-				strokeColor : "rgba(231, 76, 60,1)",
+				strokeColor: "rgba(231, 76, 60,0.5)",
+				fillColor: "rgba(150, 150, 150,0)",
 				data : data.temperature
 			}
-		]
+		],
 
 	}
 
@@ -29,16 +29,23 @@ socket.on('new_data', function(data){
 		labels: data.label,
 		datasets: [
 			{
-				fillColor : "rgba(52, 152, 219,0.5)",
-				strokeColor : "rgba(52, 152, 219,1)",
+				strokeColor: "rgba(52, 152, 219,0.5)",
+				fillColor: "rgba(150, 150, 150,0)",
 				data : data.humidite
 			}
 		]
 
 	}
 
-	new Chart(charts.temperature).Line(t)
-	new Chart(charts.humidite).Line(h)
+	var options = {
+		scaleOverride : true,
+		scaleSteps : 10,
+		scaleStepWidth : 10,
+		scaleStartValue : 0
+	}
+
+	new Chart(charts.temperature).Line(t, options);
+	new Chart(charts.humidite).Line(h, options);
 })
 
 function doublify(n){
