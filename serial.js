@@ -5,11 +5,10 @@ var serialPort = require("serialport"),
 
 var getDatas = function(data){
 
-	data = data.split[':'][1].split('-');
+	data = data.split('-');
 	var datas = {
-
-		jour: data[0],
-		cycle: data[1],
+		cycle: data[0],
+		jour: data[1],
 		temperature: data[2],
 		humidite: data[3]
 	}
@@ -24,7 +23,7 @@ var getDatas = function(data){
 
 }
 
-var port = new SerialPort('/dev/cu.usbmodem411', {
+var port = new SerialPort('/dev/ttyAMA0', {
 	parser: serialPort.parsers.readline("\n")
 });
 	port.on("data", getDatas);
