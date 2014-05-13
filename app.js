@@ -9,7 +9,7 @@ var express = require('express'),
 //On initialise les composants
 
 var app = express();
-app.use(express.static('public'))
+app.use(express.static(__dirname + '/public'))
 app.get('/', function (req, res) {
 	res.sendfile(__dirname + '/view/index.html');
 });
@@ -20,7 +20,7 @@ require('./model')(db());
 //On inscrit les routes
 
 app
-	.use(express.static('public'))
+	.use(express.static(__dirname + '/public'))
 	.use(express.bodyParser())
 
 	.get('/', function(req, res){ res.render('index.html'); })
