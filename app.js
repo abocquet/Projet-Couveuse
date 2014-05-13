@@ -1,7 +1,7 @@
 var express = require('express'),
 	events = require('./events');
 
-	// serial = require('./serial'),
+	serial = require('./serial'),
 	db = require('./db'),
 	sockets = require('./sockets')
 ;
